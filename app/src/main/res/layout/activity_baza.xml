@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".BazaActivity"
+        android:background="#8B00CACA">
+
+    <Button
+            android:background="@drawable/button_border"
+            android:text="Powrót do strony głównej"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/menu_BT" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" android:layout_marginBottom="36dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:onClick="menu3"
+    />
+
+    <TextView
+            android:text="Moje słówka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/napis" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintTop_toTopOf="parent" android:textSize="36sp"
+            android:textColor="@android:color/white" android:layout_marginTop="24dp" android:textStyle="bold"
+    />
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:id="@+id/RV_slowka"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="70dp" android:layout_marginBottom="90dp"
+    />
+
+</android.support.constraint.ConstraintLayout>
